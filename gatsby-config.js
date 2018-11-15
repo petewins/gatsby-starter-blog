@@ -1,7 +1,7 @@
-const config = require('./settings.json');
-const url = require('url');
+const config = require('./settings.json')
+const url = require('url')
 
-const siteUrl = url.parse(config.siteUrl);
+const siteUrl = url.parse(config.siteUrl)
 
 module.exports = {
   siteMetadata: {
@@ -22,13 +22,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/uploads`,
-        name: 'uploads',
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/src/data`,
         name: 'data',
       },
@@ -37,7 +30,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          "gatsby-remark-normalize-paths",
+          'gatsby-remark-normalize-paths',
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -85,6 +78,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    'gatsby-transformer-json'
+    'gatsby-transformer-json',
   ],
 }

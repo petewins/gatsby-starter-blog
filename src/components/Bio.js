@@ -1,5 +1,5 @@
 import React from 'react'
-import {graphql, StaticQuery} from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
 // Import typefaces
 import 'typeface-montserrat'
@@ -15,38 +15,32 @@ class Bio extends React.Component {
           query BioDataQuery {
             dataJson {
               name
-              profilePic { 
-                childImageSharp {
-                  fixed(width: 54, height: 54) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
+              profilePic
               bio
             }
           }
         `}
-        render = {data => (
-      <div
-        style={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
-        }}
-      >
-        <img
-          src={data.dataJson.profilePic.childImageSharp.fixed.src}
-          alt={data.dataJson.name}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-          }}
-        />
-        <div dangerouslySetInnerHTML={{__html: data.dataJson.bio}}></div>
-      </div>
+        render={data => (
+          <div
+            style={{
+              display: 'flex',
+              marginBottom: rhythm(2.5),
+            }}
+          >
+            <img
+              src={data.dataJson.profilePic}
+              alt={data.dataJson.name}
+              style={{
+                marginRight: rhythm(1 / 2),
+                marginBottom: 0,
+                width: rhythm(2),
+                height: rhythm(2),
+              }}
+            />
+            <div dangerouslySetInnerHTML={{ __html: data.dataJson.bio }} />
+          </div>
         )}
-        />
+      />
     )
   }
 }
