@@ -14,3 +14,4 @@ fields:
   label: Image
 pages:
 - src/pages/test-post.md
+- src/pages/test.md
