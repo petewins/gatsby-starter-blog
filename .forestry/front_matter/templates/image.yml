@@ -6,3 +6,4 @@ fields:
 - type: file
   name: image
   label: image
+  default: "/uploads/salty_egg.jpg"
