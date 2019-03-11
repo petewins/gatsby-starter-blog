@@ -9,4 +9,5 @@ fields:
   name: date
   label: Date
 pages:
+- src/pages/new-blog-post.md
 - src/pages/test-post.md
