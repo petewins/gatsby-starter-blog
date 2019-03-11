@@ -6,10 +6,11 @@ fields:
   label: Name
   type: text
   hidden: false
-  default: ''
+  default: Steven Bob
 - type: file
   name: profilePic
   label: Profile Pic
+  default: "/uploads/profile-pic.jpg"
 - type: textarea
   name: bio
   label: Bio
@@ -17,5 +18,6 @@ fields:
     wysiwyg: true
     schema:
       format: html
+  default: new bio test
 pages:
 - src/data/bio.json
