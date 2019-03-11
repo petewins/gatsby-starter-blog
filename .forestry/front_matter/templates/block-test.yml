@@ -8,3 +8,5 @@ fields:
   template_types:
   - bio-json
   - page
+pages:
+- src/blocks/first.md
