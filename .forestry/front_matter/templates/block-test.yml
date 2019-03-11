@@ -1,7 +1,6 @@
 ---
 label: block test
 hide_body: false
-display_field: blocks
 fields:
 - type: blocks
   name: blocks
