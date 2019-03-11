@@ -1,0 +1,11 @@
+---
+label: block test
+hide_body: false
+display_field: blocks
+fields:
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - bio-json
+  - page
